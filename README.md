@@ -26,7 +26,7 @@ The system includes:
 
 ## 📁 Dataset
 
-The dataset is from [Kaggle](https://www.kaggle.com/mlg-ulb/creditcardfraud), containing real-world credit card transactions (anonymized) made by European cardholders in September 2013.
+The dataset is from [Kaggle](https://drive.google.com/file/d/1xaUrg-xQntW_Ovy9D_nrf-NlVYPVZ0mn/view?usp=sharing), containing real-world credit card transactions (anonymized) made by European cardholders in September 2013.
 
 ---
 
