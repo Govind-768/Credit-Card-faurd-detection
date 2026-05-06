@@ -1,5 +1,6 @@
 from sklearn.ensemble import RandomForestClassifier
 from xgboost import XGBClassifier
+from src.utils import save_feature_importance
 import joblib
 
 
@@ -35,7 +36,16 @@ def train_models(X_train, y_train):
 
     models["XGBoost"] = xgb_model
 
-    # Save model
-    joblib.dump(xgb_model, "models/final_fraud_model.pkl")
+    # Save feature importance graph
+    save_feature_importance(
+        rf_model,
+        X_train.columns
+    )
+
+    # Save trained model
+    joblib.dump(
+        xgb_model,
+        "models/final_fraud_model.pkl"
+    )
 
     return models
